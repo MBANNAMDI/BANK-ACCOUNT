@@ -1,0 +1,158 @@
+#body{
+  background: linear-gradient(to right,rgb(167, 30, 162),rgb(190, 98, 104));
+  /* background-color: rgb(226, 43, 162); */
+}
+#logo{
+  width: 9rem;
+  margin-top: -1.6rem;
+  margin-left: 1%;
+
+  /* color: aliceblue; */
+}
+#trustlogo{
+  width: 21rem;
+  margin-top: -2.6rem;
+  padding-left: 11.6%;
+  color: rgb(23, 44, 80);
+}
+#image{
+  /* background: url("../image/pexels-energepiccom-2988232.jpg"); */
+  /* height:30%;
+  width:30%; */
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+  color: rgb(17, 15, 37);
+  text-align: left;
+  margin-left: -1%;
+  padding-top: 13%;
+}
+#phone{
+  width:10.5rem ;
+  height:20rem;
+  margin-left:32rem;
+  margin-top:-20%;
+  position: absolute;
+  z-index: 3;
+}
+#image h1{
+  font-size:3rem;
+}
+#image button{
+  width:7.6rem ;
+  height: 3.5rem;
+  margin-top:1.5%;
+  margin-left: 1rem;
+  color:rgb(225, 212, 193);
+  font-weight: bold;
+}
+#card1{
+  width: 11rem;
+  height: 6rem;
+  margin-left: 73%;
+  margin-top: -39%;
+ transform: rotate(-20deg);
+}
+#card2{
+  width: 11rem;
+  height: 6rem;
+  margin-left: 73%;
+  margin-top: -30%;
+  transform: rotate(20deg);
+}
+#navbar{
+  background:linear-gradient(rgb(249, 184, 209),rgb(249, 184, 203));
+  height: 5rem;
+  width: 100%;
+}
+#navbar nav{
+  display:flex;
+}
+nav{
+  margin-left: 34.5%;
+}
+#navbar nav li{
+   list-style: none;
+   margin-left: 6%;
+  margin-top: -4.7%;
+}
+#navbar nav li a{
+  text-decoration: none;
+  color: rgb(17, 16, 16);
+  font-weight:100px;
+}
+#navbar nav li a:hover{
+  color:rgb(123, 121, 118);
+}
+#signup{
+  margin-left: 85%;
+  margin-top: -6.3%;
+}
+.form{
+  width: 16rem;
+  
+}
+#user div{
+  margin-left: 7%;
+border-radius:10px;
+
+}
+.row{
+  gap:3rem;
+  margin-top: 7%;
+  
+}
+#user .box{
+  border-style:none;
+  width: fit-content;
+  background: linear-gradient(purple,rgb(216, 131, 169));
+  box-shadow: 6px 8px 6px black;
+}
+
+#bank{
+  text-align: center;
+}
+
+#accounts{
+  margin-left:5%;
+  font-weight: 70px;
+}
+#output{
+  /* display: none; */
+  margin-left: 3 0%;
+  /* border-style: groove; */
+  /* border-color: rgb(232, 110, 148); */
+  box-shadow: 5px 8px 7px rgb(23, 18, 23);
+  background: linear-gradient(to right,rgb(240, 96, 161),rgb(166, 15, 83));
+  width: 36.4rem;
+  height: 24.5rem;
+  padding: 2%;
+  padding-left: 4.6%;
+
+}
+
+#again{
+  width: 100%;
+}
+
+
+#logo2{
+  width: 9rem;
+  margin-top: -2.6rem;
+  margin-left: -1.7%;
+
+  /* color: aliceblue; */
+}
+#visa{
+  margin-left: 80%;
+  margin-top: -11%;
+  font-family:monospace;
+  font-weight: bold;
+}
+
+/* #foreign{
+  background: url("../image/bank-building_23-2147510895.jpg") no-repeat;
+  height: 30rem;
+  width: 100%;
+} */
