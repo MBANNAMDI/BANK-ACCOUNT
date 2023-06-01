@@ -1,13 +1,16 @@
+body{
+  background-color: rgb(210, 176, 243);
+}
+
 #body{
   background: linear-gradient(to right,rgb(167, 30, 162),rgb(190, 98, 104));
-  /* background-color: rgb(226, 43, 162); */
+  width: 100%;
+  
 }
 #logo{
   width: 9rem;
   margin-top: -1.6rem;
   margin-left: 1%;
-
-  /* color: aliceblue; */
 }
 #trustlogo{
   width: 21rem;
@@ -94,13 +97,14 @@ nav{
   
 }
 #user div{
-  margin-left: 7%;
+  margin-left: 2%;
 border-radius:10px;
 
 }
 .row{
   gap:3rem;
   margin-top: 7%;
+  margin-left: 2%;
   
 }
 #user .box{
@@ -120,13 +124,12 @@ border-radius:10px;
 }
 #output{
   display: none;
-  margin-left: 3 0%;
-  /* border-style: groove; */
-  /* border-color: rgb(232, 110, 148); */
+  margin-left: 30%;
   box-shadow: 5px 8px 7px rgb(23, 18, 23);
   background: linear-gradient(to right,rgb(240, 96, 161),rgb(166, 15, 83));
-  width: 36.4rem;
-  height: 24.5rem;
+   width: 36.4rem; 
+  /* height: 24.5rem; */ 
+  background-size: contain;
   padding: 2%;
   padding-left: 4.6%;
 
@@ -145,10 +148,14 @@ border-radius:10px;
   /* color: aliceblue; */
 }
 #visa{
-  margin-left: 80%;
-  margin-top: -11%;
+  margin-left: 82%;
+  margin-top: -1.4%;
   font-family:monospace;
   font-weight: bold;
+}
+#warn{
+  color: rgb(159, 5, 5);
+  display: none;
 }
 
 /* #foreign{

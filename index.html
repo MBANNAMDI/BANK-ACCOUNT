@@ -54,7 +54,7 @@
 
 <div id="user" class="row">
 
-  <div id="create" class="box col-md-4">
+  <div id="create" class="box col-md-3">
     <h3>Create Account</h3>
     <form id="new-account">
 <div class="form-group">
@@ -90,7 +90,7 @@
 
 
 
-  <div id="withdrawal" class="box col-md-4">
+  <div id="withdrawal" class="box col-md-3">
     <h3>Withdraw</h3>
     <form id="withdraw-account">
 <div class="form-group">
@@ -102,22 +102,12 @@
   <label for="">Amount</label>
   <input type="number" class="form-control" id="amount2">
   </div><br><br>
-<!-- <div class="form-group">
-  <label for="">Account:
-
-    <select name="seat" class="form-control"  id="accounttype2">
-      <option value="No Of Seat">Select Account Type</option>
-    <option value="1">Current</option>
-    <option value="2">Savings</option>
-    </select>
-  </label>
-</div><br> -->
 <button class="btn btn-danger" type="submit">Done</button>
 </form>
   </div><br>
 
 
-  <div id="deposit" class="box col-md-4">
+  <div id="deposit" class="box col-md-3">
     <h3>Deposit</h3>
     <form id="deposit-account">
 <div class="form-group">
@@ -129,25 +119,34 @@
   <label for="">Amount</label>
   <input type="number" class="form-control" id="amount3">
   </div><br><br>
-
-  <!-- <div class="form-group">
-  <label for="">Account:
-
-    <select name="seat" class="form-control"  id="accounttype3">
-      <option value="No Of Seat">Select Account Type</option>
-    <option value="1">Current</option>
-    <option value="2">Savings</option>
-    </select>
-  </label>
-</div><br> -->
 <button class="btn btn-danger" type="submit">Done</button>
 </form>
   </div>
 
 
-    <h2 id="account"> Customer Accounts:</h2>
-  
+  <div id="transactoin" class="box col-md-3">
+    <h3>Transfer</h3>
+    <form id="trans-account">
+<div class="form-group">
+  <label for="name">From</label>
+  <input type="tel" class="form-control" id="no4" placeholder="Acc no1">
+</div><br><br>
 
+<div class="form-group">
+<label for="name">To</label>
+<input type="tel" class="form-control" id="no5" placeholder="Acc no2">
+</div><br><br>
+
+<div class="form-group">
+  <label for="name">Amount</label>
+  <input type="tel" class="form-control" id="amount4">
+  </div><br><br>
+  <button class="btn btn-danger" type="submit">Done</button>
+</form>
+  </div>
+
+
+    <h2 id="account"> Customer Accounts:</h2>
   
   <ol id="accounts">
   </ol>
@@ -162,12 +161,13 @@
   <p>Account Type : <span class="accounttype"></span></p>
   <p>Amount Deposited: <span class="amount"></span></p>
   <p>Account History: <span class="accHistory"></span></p>
+  <p id="warn"><i>You don't have sufficient balance to proceed with this withdrawal</i></p>
   <div id="buttons">
   </div>
 </div>
 </div><br>
 <button class="btn btn-danger" id="again">Create/Manage Account</button>
-
+</div>
 
 </div>
 </body>

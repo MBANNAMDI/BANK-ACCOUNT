@@ -35,12 +35,6 @@ function Account(name, number, amount,accounttype) {
   this.history = ["Credit:$" + amount]
 }
 
-
-
-// Bank.prototype.updateAccount = function (newamount, id) {
-//   this.accounts[id].amount = newamount;
-// }
-
 Account.prototype.makeDeposit = function (amount) {
   $("#warn").hide();
   this.amount =  this.amount + parseInt(amount);
@@ -49,6 +43,7 @@ Account.prototype.makeDeposit = function (amount) {
 
 Account.prototype.makeWithdrawl = function (amount) {
   if (amount > this.amount) {
+    confirm("ehhhn! U be theif ? Ogbeni you broke jooo! ")
     $("#warn").show();
   } else {
     $("#warn").hide();
@@ -109,6 +104,12 @@ function showAccount(taskId) {
     showAccount(id)
    }
 
+   function transfer(amount,firstId,secondId ){
+    list.findAccount(firstId ).makeWithdrawl(amount);
+    list.findAccount(secondId ).makeDeposit(amount);
+    showAccount(firstId)
+   }
+
 
 function getSelectedAccount() {
   return parseInt($("#accounts").children(":selected").attr("id"));
@@ -149,7 +150,15 @@ $(document).ready(function () {
     const  inputtedAccno3 = parseInt($("input#no3").val());
      deposit(inputtedAmount3,inputtedAccno3); 
   });
-parseInt
+
+  $("form#trans-account").submit(function (event) {
+    event.preventDefault();
+    const  inputtedAmount4 = parseInt($("input#amount4").val());
+    const  inputtedAccno4 = parseInt($("input#no4").val());
+    const  inputtedAccno5 = parseInt($("input#no5").val());
+     transfer(inputtedAmount4,inputtedAccno4,inputtedAccno5); 
+  });
+
 
   $("form#new-account").submit(function (event) {
       event.preventDefault();
@@ -166,28 +175,6 @@ parseInt
       newAccount = new Account(inputtedName, inputtedNumber, inputtedAmount,inputtedAccountType);
       list.addAccount(newAccount);
       displayAccountDetails(list);
-
-   
-
-
-
-// function showWithdraw(taskId){
-//    const task = list.findAccount(taskId);
-//   if (inputtedAmount2) {
-//     console.log(task.findAccount(taskId).makeWithdrawl(inputtedAmount2));
-//     console.log("done")
-//   }
-// }
-
-    
-// newAccount = new Account(inputtedName, inputtedAmount2, inputtedAmount,inputtedAccountType);
-//      list.addAccount(newAccount);
-//       displayAccountDetails(list);
-    // The next three lines are new:
-    // $("input#new-first-name").val("");
-    // $("input#new-last-name").val("");
-    // $("input#new-phone-number").val("");
-
 
 
  });
