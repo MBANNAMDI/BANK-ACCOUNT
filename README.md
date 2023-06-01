@@ -1,4 +1,4 @@
-<!-- # _Bank Account_
+# _Bank Account_
 
 #### _{This application is used to create and edit user's bank account }_
 
@@ -35,4 +35,4 @@ _{MIT}_
 
 ## Contact Information
 
-_{07081714922}}_ -->
+_{07081714922}}_
