@@ -98,11 +98,11 @@ function showAccount(taskId) {
   buttons.append("<button class='btn btn-danger' id=" + + task.id + ">Delete</button>");
 }
 
-  // function withdrawal(amount,id ){
-  //   list.findAccount(id).makeWithdrawl(amount);
-  //   showAccount(id)
+  function withdrawal(amount,id ){
+    list.findAccount(id).makeWithdrawl(amount);
+    showAccount(id)
       
-  //  }
+   }
 
    function deposit(amount,id ){
     list.findAccount(id ).makeDeposit(amount);
