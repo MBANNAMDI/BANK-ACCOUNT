@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/script.js"></script>
+    <title>Bank Account 2</title>
+</head>
+<body><div id="body">
+
+  <div id="navbar" class="fixed-top">
+    <img src="image/American-Bank-and-Trust-1024x768.png" id="logo">
+    <h3 id="trustlogo">TRUST BANK</h3>
+    
+    <nav>
+      <li><a href="index.html">Customer's Account</a></li>
+        <li><a href="foreign.html">Foreign Exchange</a></li>
+        <li><a href=""> Loaning</a></li>
+        <li><a href="">FAQ</a></li>
+       
+       
+       
+    </nav>
+    <button id="signup" class="btn btn-danger">Sign UP</button>
+    </div>
+
+
+
+
+  <div id="bank">
+
+<div id="image"><br><br>
+  
+<h1>Get A Loan With Just 10%  <br> Interest 
+   Rate</h1>
+<h1>You Can Come Trade Forex With <br> Us And 
+   Become a Partner</h1><br>
+  <button class="btn btn-dark">Get Loan!</button>  
+  <button class="btn btn-dark">Trade Now!</button>
+  <img src="image/assets-images-site-online-banking-feature-images-iphone-x-cc-transfer-small-CSX5bd53a18.png" id="phone">
+  <img src="image/card1.jpg" id="card1"><br>
+  <img src="image/card2.jpg" id="card2">
+</div><hr>
+
+<h2>Create & Manage Your Account</h2>
+<p>you can bank on us..</p>
+</div>
+
+
+<div id="user" class="row">
+
+  <div id="create" class="box col-md-4">
+    <h3>Create Account</h3>
+    <form id="new-account">
+<div class="form-group">
+  <label for="name">Client's Name</label>
+  <input type="text" class="form-control" id="name">
+</div><br>
+
+<div class="form-group">
+  <label for="phone">Mobile No</label>
+<input type="tel" class="form-control" id="number">
+</div><br>
+
+<div class="form-group">
+  <label for="">Initial Deposit</label>
+  <input type="number" class="form-control" id="amount">
+  </div><br>
+
+<div class="form-group">
+  <label for="">Account Type:
+
+    <select name="seat" class="form-control"  id="accounttype">
+      <option value="Select Account Type">Select Account Type</option>
+    <option value="Current">Current</option>
+    <option value="Savings">Savings</option>
+
+  </select>
+  </label>
+</div><br>
+<button class="btn btn-danger" type="submit">Done</button>
+
+</form>
+  </div><br>
+
+
+
+  <div id="withdrawal" class="box col-md-4">
+    <h3>Withdraw</h3>
+    <form id="withdraw-account">
+<div class="form-group">
+  <label for="name">Account Number</label>
+  <input type="tel" class="form-control" id="no">
+</div><br><br><br><br>
+
+<div class="form-group">
+  <label for="">Amount</label>
+  <input type="number" class="form-control" id="amount2">
+  </div><br><br>
+<!-- <div class="form-group">
+  <label for="">Account:
+
+    <select name="seat" class="form-control"  id="accounttype2">
+      <option value="No Of Seat">Select Account Type</option>
+    <option value="1">Current</option>
+    <option value="2">Savings</option>
+    </select>
+  </label>
+</div><br> -->
+<button class="btn btn-danger" type="submit">Done</button>
+</form>
+  </div><br>
+
+
+  <div id="deposit" class="box col-md-4">
+    <h3>Deposit</h3>
+    <form id="deposit-account">
+<div class="form-group">
+  <label for="name">Account Number</label>
+  <input type="tel" class="form-control" id="no3">
+</div><br><br><br><br>
+
+<div class="form-group">
+  <label for="">Amount</label>
+  <input type="number" class="form-control" id="amount3">
+  </div><br><br>
+
+  <!-- <div class="form-group">
+  <label for="">Account:
+
+    <select name="seat" class="form-control"  id="accounttype3">
+      <option value="No Of Seat">Select Account Type</option>
+    <option value="1">Current</option>
+    <option value="2">Savings</option>
+    </select>
+  </label>
+</div><br> -->
+<button class="btn btn-danger" type="submit">Done</button>
+</form>
+  </div>
+
+
+    <h2 id="account"> Customer Accounts:</h2>
+  
+
+  
+  <ol id="accounts">
+  </ol>
+  
+
+<div id="output">
+  <img src="image/American-Bank-and-Trust-1024x768.png" id="logo2"><br><br>
+  <h4 id="visa">Visa</h4>
+  <p>Client's Name: <span class="name"></span></p>
+  <p>Mobile Seat: <span class="number"></span></p>
+  <p>Account Number: <span class="accnum"></span></p>
+  <p>Account Type : <span class="accounttype"></span></p>
+  <p>Amount Deposited: <span class="amount"></span></p>
+  <p>Account History: <span class="accHistory"></span></p>
+  <div id="buttons">
+  </div>
+</div>
+</div><br>
+<button class="btn btn-danger" id="again">Create/Manage Account</button>
+
+
+</div>
+</body>
+</html>
