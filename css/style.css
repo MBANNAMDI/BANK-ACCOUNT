@@ -119,7 +119,7 @@ border-radius:10px;
   font-weight: 70px;
 }
 #output{
-  /* display: none; */
+  display: none;
   margin-left: 3 0%;
   /* border-style: groove; */
   /* border-color: rgb(232, 110, 148); */
