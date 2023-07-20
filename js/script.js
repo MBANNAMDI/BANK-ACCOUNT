@@ -32,7 +32,7 @@ function Account(name, number, amount,accounttype) {
   this.number = number;
   this.amount = parseInt(amount);
   this.accounttype = accounttype;
-  this.history = ["Credit:$" + amount]
+  this.history = ["Credit:$" + amount];
 }
 
 Account.prototype.makeDeposit = function (amount) {
@@ -95,19 +95,22 @@ function showAccount(taskId) {
 
   function withdrawal(amount,id ){
     list.findAccount(id).makeWithdrawl(amount);
-    showAccount(id)
+    showAccount(id);
+    alert("Transaction successful");
       
    }
 
    function deposit(amount,id ){
     list.findAccount(id ).makeDeposit(amount);
-    showAccount(id)
+    showAccount(id);
+    alert("Transaction successful");
    }
 
    function transfer(amount,firstId,secondId ){
     list.findAccount(firstId ).makeWithdrawl(amount);
     list.findAccount(secondId ).makeDeposit(amount);
-    showAccount(firstId)
+    showAccount(firstId);
+    alert("Transaction successful");
    }
 
 

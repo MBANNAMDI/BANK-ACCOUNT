@@ -34,8 +34,8 @@ body{
 #phone{
   width:10.5rem ;
   height:20rem;
-  margin-left:32rem;
-  margin-top:-20%;
+  margin-left:47.7rem;
+  margin-top:-26.5%;
   position: absolute;
   z-index: 3;
 }
@@ -156,6 +156,20 @@ border-radius:10px;
 #warn{
   color: rgb(159, 5, 5);
   display: none;
+}
+#transform{
+  /* height:15rem ;
+  width: 21rem; */
+  /* margin-left:72% ; */
+  animation: float 2s linear infinite;
+}
+@keyframes float{
+  0%,100%{
+    transform: translateY(-3.5rem);
+  }
+  50%{
+    transform: translateY(1rem);
+  }
 }
 
 /* #foreign{

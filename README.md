@@ -1,4 +1,4 @@
-# _Bank Account_
+sa# _Bank Account_
 
 #### _{This application is used to create and edit user's bank account }_
 
@@ -10,11 +10,12 @@
 * _CSS_
 * _BOOTSTRAP_
 * _JAVASCRIPT/JQUERY_
+* _GIT_
 
 
 ## Description
 
-_{This application allows users to create their bank accont withdraw and deposit money into their respective account. }_
+_{This application allows users to create their bank account, withdraw, deposit and transfer money into their respective account. }_
 
 ## Setup/Installation Requirements
 
